@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculo.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Audio;
@@ -54,6 +56,20 @@ public class Main {
         audio.setTotalReproducoes(100);
         System.out.println("O nome do podcast é: " + audio.getNome());
         System.out.println("O total de visualizações é: " + audio.getTotalReproducoes());
+
+        var filmeDoPaulo = new Filme();
+        filmeDoPaulo.setNome("DogVille");
+        filmeDoPaulo.setDuracaoEmMinutos(200);
+        filmeDoPaulo.setAnoDeLancamento(2003);
+        filmeDoPaulo.avalia(10);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmeDoPaulo);
+        listaDeFilmes.add(filmeDois);
+        listaDeFilmes.add(meuFilme);
+        System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+        System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
+        System.out.println(listaDeFilmes);
 
     }
 }
