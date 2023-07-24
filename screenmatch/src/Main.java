@@ -1,5 +1,6 @@
 import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculo.FiltroRecomendacao;
+import br.com.alura.screenmatch.modelos.Audio;
 import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
@@ -47,6 +48,11 @@ public class Main {
         episodio.setSerie(lost);
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
+
+        Audio audio = new Audio();
+        audio.setNome("PodPah");
+        audio.setTotalReproducoes(100);
+        System.out.println("O nome do podcast é: " + audio.getNome());
 
     }
 }
