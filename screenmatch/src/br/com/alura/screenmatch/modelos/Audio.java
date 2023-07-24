@@ -3,7 +3,7 @@ package br.com.alura.screenmatch.modelos;
 public class Audio extends Titulo {
     private int audio;
     private int totalReproducoes;
-    
+
     public int getAudio() {
         return audio;
     }
@@ -16,6 +16,5 @@ public class Audio extends Titulo {
     public void setTotalReproducoes(int totalReproducoes) {
         this.totalReproducoes = totalReproducoes;
     }
-
     
 }

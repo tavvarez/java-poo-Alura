@@ -53,6 +53,7 @@ public class Main {
         audio.setNome("PodPah");
         audio.setTotalReproducoes(100);
         System.out.println("O nome do podcast é: " + audio.getNome());
+        System.out.println("O total de visualizações é: " + audio.getTotalReproducoes());
 
     }
 }
